@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../sass/main.css">
+  <link rel="stylesheet" href="giphy.css">
+  <title>Giphy party</title>
+
+</head>
+
+<body>
+  <div class="container ">
+    <div class="wrapper">
+      <div class="giphy giphy1">
+        <div class="giphy__title">
+          <h1 class="text-center"> GIPHY PARTY</h1>
+        </div>
+        <div class="giphy__action d-flex justify-content-center">
+          <input type=" text" placeholder="Search Item" class="txt--name">
+          <button class="btn mx-1 btn-dark btn--search">Search Giphy!</button>
+          <button class="btn btn-danger btn--remove">Remove Images</button>
+        </div>
+        <div class="giphy__content">
+          <div class="get_giphy">
+          </div>
+          <script class="artists-template" type="text/x-handlebars-template">
+            <ul class="artist">
+            {{#each data}}
+                <li class="item">
+                  <img 
+                    class="img-fluid"
+                    alt="{{username}}" 
+                    src="{{images.original.url}}" 
+                    width="{{images.original.width}}" 
+                    height="{{images.original.height}}">
+                  </li>
+            {{/each}}
+            </ul>
+        </script>
+        </div>
+      </div>
+      <div class="giphy giphy2">
+        <div class="giphy__title">
+          <h1 class="text-center"> GIPHY PARTY</h1>
+        </div>
+        <div class="giphy__action d-flex justify-content-center">
+          <input type=" text" placeholder="Search Item" class="txt--name">
+          <button class="btn mx-1 btn-dark btn--search">Search Giphy!</button>
+          <button class="btn btn-danger btn--remove">Remove Images</button>
+        </div>
+        <div class="giphy__content">
+          <div class="get_giphy">
+          </div>
+          <script class="artists-template" type="text/x-handlebars-template">
+            <ul class="artist">
+            {{#each data}}
+                <li class="item">
+                  <img 
+                    class="img-fluid"
+                    alt="{{username}}" 
+                    src="{{images.original.url}}" 
+                    width="{{images.original.width}}" 
+                    height="{{images.original.height}}">
+                  </li>
+            {{/each}}
+            </ul>
+        </script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/handlebars-v4.7.7.js"></script>
+  <script src="./giphy.js"></script>
+</body>
+
+</html>

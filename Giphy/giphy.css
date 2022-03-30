@@ -1,0 +1,46 @@
+.wrapper {
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#424143), to(#050505));
+  background-image: linear-gradient(#424143, #050505);
+  height: auto;
+}
+
+.wrapper .giphy__title {
+  color: #fbfafc;
+}
+
+.wrapper .giphy__action {
+  margin: 10px;
+}
+
+.wrapper .giphy__content {
+  height: 500px;
+  overflow: scroll;
+}
+
+.wrapper .giphy__content .get_giphy .artist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+}
+
+.wrapper .giphy__content .get_giphy .loading {
+  position: relative;
+}
+
+.wrapper .giphy__content .get_giphy .loading img {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+  width: 400px;
+  height: 400px;
+}
+/*# sourceMappingURL=giphy.css.map */
